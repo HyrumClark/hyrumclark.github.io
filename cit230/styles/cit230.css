@@ -16,15 +16,15 @@ h1 {
 }
 
 h2 {
-    font-size: /* x.xrem */;
+    font-size: 1.25rem ;
     text-align: center;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 10px solid #bbb;
 }
 
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: /* xxxpx (px = pixel is a unit of measure)  */;
+    max-width: 1000px;
 }
 
 header, footer, footer a {
@@ -40,5 +40,5 @@ header img {
 }
 
 footer {
-    font-size: /* smaller */;
+    font-size: smaller;
 }
