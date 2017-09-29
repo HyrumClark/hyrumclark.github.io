@@ -1,0 +1,61 @@
+/* html */
+body {
+    font-size: 16px;
+    line-height: 32px;
+    font-family:  Ubuntu, sans-serif;
+    color: #000;
+    background-color: ghostwhite;
+}
+
+h1 {
+    font-size:  2.25rem;
+    text-align: center;
+    color: #FFF;
+}
+
+h2 {
+    font-size: 1.5rem ;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+header, main, footer {
+    margin: .25rem;
+    padding: .5rem;
+    max-width: 600px;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: #2659BF;
+    color: whitesmoke;
+}
+
+footer {
+    font-size: smaller;
+}
+
+
+/* class */
+.right
+{
+    text-align: right;
+}
+
+.smaller
+{
+    font-size: .8em;
+}
+
+
+.style1
+{
+    margin: 0 auto;
+    border: 1px solid #bbb;
+    padding: 5px;
+    background-color: #eee;
+    line-height: 1.5em;
+}
+
+
+/* id */
