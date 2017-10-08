@@ -2,7 +2,7 @@
 * { margin: 0; box-sizing: border-box; }
 
 body {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 32px;
     font-family: Comic sans ms, Ubuntu, sans-serif;
     color: #000;
@@ -10,17 +10,25 @@ body {
 }
 
 h1 {
-    font-family: Papyrus, comic sans ms;
     font-size:  2.25rem;
     text-align: center;
     color: #fff22a;
 }
 
 h2 {
-    font-size: 1.5rem ;
+    font-size: 1.75rem ;
     text-align: center;
     border-bottom: 1px solid #bbb;
+    color: #fff22a;
 }
+
+h3 {
+    font-size: 1.25rem ;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+    color: #fff22a;
+}
+
 
 header, nav, main, footer {
     margin: .25rem auto;
@@ -30,7 +38,7 @@ header, nav, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: #2659BF;
+    background-color: #0088ff;
     color: whitesmoke;
 }
 
