@@ -37,6 +37,7 @@ header, nav, main, footer {
 }
 
 header, footer, footer a {
+    font-family: Papyrus;
     text-align: center;
     background-color: #0088ff;
     color: whitesmoke;
