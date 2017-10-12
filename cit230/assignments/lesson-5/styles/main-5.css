@@ -1,28 +1,37 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; margin: 0; }
 
 
 /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
     font-size: 16px;
+    line-height: 32px;
+    font-family: Comic sans ms, Ubuntu, sans-serif;
+    color: #000;
+    background-color: lightgrey;
     /* Declare the base font-family - from google font api or other */
 }
 
-header,
-nav,
-main,
-footer {
-    /* the comma means apply the following CSS declarations to all of the listed elements */
-    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+header, nav, main, footer {
+    margin: .25rem auto;
+    padding: .5rem;
+    /*max-width: 1000px;*/
 }
 
-header {}
+header, footer, footer a {
+    font-family: Papyrus;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #0088ff;
+    color: #FFF;
+}
 
-header h1 {}
+
+header {overflow: auto}
+
+header h1 { font-weight: bold; }
 
 header img {}
 
@@ -64,14 +73,41 @@ article p.town-article img {
     margin: ???;
 }
 
-footer {}
+footer { font-size: smaller; }
+
 
 footer aside {}
 
 footer>p {}
 
+h1 {
+    font-size:  2.25rem;
+    text-align: center;
+    color: #fff22a;
+}
 
-/* This structure refers to p elements that are direct children of the footer element */
+h2 {
+    font-size: 1.75rem ;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+    color: #fff22a;
+}
+
+h3 {
+    font-size: 1.25rem ;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+    color: #fff22a;
+}
 
 
-/* Other Class Selectors */
+/* class */
+.floatRight{
+    overflow: auto;
+    float: right;
+
+}
+
+/* id */
+
+
