@@ -31,7 +31,7 @@ header, footer, footer a {
 
 header {
     overflow: auto;
-    background-image: url(../images/skyline.png);
+    background-image: url(../images/o-skyline.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,7 +73,8 @@ main figure img {
 
 section {}
 
-section div { margin: 0 auto; }
+section div { margin: 0 auto;
+}
 
 article p.town-article img {
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
@@ -124,6 +125,13 @@ h3 {
 .forecast{
     display: none;
 
+}
+
+.sunny{
+    background-image: url(../images/Sunny%20day-min.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* id */
