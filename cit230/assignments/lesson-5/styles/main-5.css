@@ -1,8 +1,6 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box; margin: 0; }
-
-
+* { box-sizing: border-box; margin: 0 8px; }
 /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
@@ -11,7 +9,6 @@ body {
     font-family: Comic sans ms, Ubuntu, sans-serif;
     color: #000;
     background-color: lightgrey;
-    /* Declare the base font-family - from google font api or other */
 }
 
 header, nav, main, footer {
@@ -40,7 +37,10 @@ header {
 
 header h1 { font-weight: bold; }
 
-header img { max-width: 350px; }
+header img {
+/*    max-width: 350px;*/
+    width: 92%;
+}
 
 header .subheading {}
 
@@ -48,7 +48,15 @@ nav {}
 
 nav button {}
 
-nav ul {}
+nav ul {
+    display: none;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
 
 nav ul li {}
 
@@ -63,24 +71,38 @@ main {}
 main h2 {}
 
 main figure {
-    margin: 0 0 .2rem 2%;
+    margin: 0 auto;
+    text-align: center;
     width: 96%;
 }
 
 main figure img {
-    width: 100%;
+    width: 100%
 }
 
 section {}
 
-section div { margin: 0 auto;
+section div {
+    overflow: auto;
+    margin: 0 auto;
+    max-width: 700px
 }
 
-article p.town-article img {
+section div img {}
+
+article p {
+    max-width: 1000px;
+    overflow: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+article img {
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: ???;
+    width: 100%;
+    max-width: 700px;
     /* fill the page in the small/phone view */
-    margin: ???;
+    margin: 5px auto 0 auto;
 }
 
 table{
@@ -92,7 +114,7 @@ footer { font-size: smaller; }
 
 footer aside {}
 
-footer>p {}
+footer aside p {margin: -7px auto;}
 
 h1 {
     font-size:  2.25rem;
@@ -114,12 +136,22 @@ h3 {
     color: #fff22a;
 }
 
+h4 {
+    font-size: 1.15rem ;
+    font-weight: bolder;
+    text-align: center;
+}
+
 
 /* class */
 .floatRight{
     overflow: auto;
     float: right;
+}
 
+.floatLeft{
+    overflow: auto;
+    float: left;
 }
 
 .forecast{
