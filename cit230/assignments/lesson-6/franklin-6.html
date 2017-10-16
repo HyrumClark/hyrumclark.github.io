@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>What's My Weather?</title>
+    <meta name="author" content="Hyrum J. Clark">
+    <meta name="description" content="page description placeholder">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="/styles/normlize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-5.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium-5.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large-5.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="The site logo">
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>The City of Franklin</h2>
+        <figure>
+            <img src="/cit230/assignments/lesson-5/images/o-sunnyday.jpeg" alt="Sunny Day">
+        </figure>
+        <section>
+            <h3>Weather Summary</h3>
+            <div class="highlow">
+                <p>High: 90&deg;F</p>
+                <p>Low: 66&deg;F</p>
+            </div>
+            <div class="current">
+                <p class="floatLeft">Sunny</p>
+                <img src="/cit230/assignments/lesson-5/images/o-sun.jpg" alt="sun">
+            </div>
+            <div class="conditions">
+                <p>Precipitation: 0%</p>
+                <p>Wind Speed: 5 mph SW</p>
+            </div>
+        </section>
+
+        <section class="forecast">
+            <h3>10 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article>
+            <h3>Franklin Breaks Record</h3>
+            <p><img src="/cit230/assignments/lesson-5/images/franklin.jpeg" alt="Franklin"></p>
+            <p class="town-article">lorem ipsum dolor sit amet, consectetur adipiscing elit. phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. maecenas nisl est, ultrices nec congue eget, auctor vitae massa. fusce luctus vestibulum augue ut aliquet. mauris ante ligula, facilisis sed ornare eu, lobortis in odio. praesent convallis urna a lacus interdum ut hendrerit risus congue. nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. in at libero sed nunc venenatis imperdiet sed ornare turpis. donec vitae dui eget tellus gravida venenatis. integer fringilla congue eros non fermentum. sed dapibus pulvinar nibh tempor porta. cras ac leo purus. mauris quis diam velit.</p>
+        </article>
+
+    </main>
+
+    <footer>
+        <aside>
+            <h4>The Weather Site</h4>
+            <p>123 Main St.</p>
+            <p>Franklin, MU 83454</p>
+            <p>(999)888-7777</p>
+            <p><a href="mailto:JimminyChristmas@getemails.com">JimminyChristmas@getemails.com</a></p>
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | What's My Weather? | <span id="currentdate">Current Date Placeholder</span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+
+</body>
+
+</html>
