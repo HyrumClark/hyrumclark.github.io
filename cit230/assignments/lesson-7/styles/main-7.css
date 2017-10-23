@@ -1,0 +1,194 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box; margin: 0 8px; }
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: Comic sans ms, 'Architects Daughter', cursive, Ubuntu, sans-serif;
+    color: #000;
+    background-color: lightgrey;
+}
+
+header, nav, main, footer {
+/*
+    margin: .25rem auto;
+    padding: 1%;
+*/
+    /*max-width: 1000px;*/
+}
+
+header, footer, footer a {
+    font-family: Papyrus;
+    font-weight: bolder;
+/*    text-align: center;*/
+    background-color: #0088ff;
+    color: #FFF;
+}
+
+
+header {
+    overflow: auto;
+    background-image: url(../images/o-skyline.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header h1 { font-weight: bold; }
+
+header img {
+
+    width: 92%;
+}
+
+header .subheading {}
+
+nav {}
+
+nav button {}
+
+nav ul {
+    display: none;
+/*    text-align: center;*/
+    list-style-type: none;
+/*
+    margin: 0;
+    padding: 0;
+*/
+
+}
+
+
+nav ul li {}
+
+nav ul li a {}
+
+nav ul li.active a {}
+
+nav ul li a:hover {}
+
+main {}
+
+main h2 {}
+
+main figure {
+/*
+    margin: 0 auto;
+    text-align: center;
+*/
+    width: 96%;
+}
+
+main figure img {
+    width: 100%
+}
+
+section {}
+
+section div {
+    overflow: auto;
+/*    margin: 0 auto;*/
+    max-width: 700px
+}
+
+section div img {}
+
+article p {
+    max-width: 1000px;
+    overflow: auto;
+/*
+    text-align: center;
+    margin: 0 auto;
+*/
+}
+
+article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 100%;
+    max-width: 700px;
+    /* fill the page in the small/phone view */
+/*    margin: 5px auto 0 auto;*/
+}
+
+table{
+/*    margin: 0 auto;*/
+}
+
+footer { font-size: smaller; }
+
+
+footer aside {}
+
+footer aside p {
+/*    margin: -7px auto;*/
+}
+
+h1 {
+    font-size:  2.25rem;
+    text-align: center;
+    color: #fff22a;
+}
+
+h2 {
+    font-size: 1.75rem ;
+/*    text-align: center;*/
+    border-bottom: 1px solid #bbb;
+    color: #fff22a;
+}
+
+h3 {
+    font-size: 1.25rem ;
+/*    text-align: center;*/
+    border-bottom: 1px solid #bbb;
+    color: #fff22a;
+}
+
+h4 {
+    font-size: 1.15rem ;
+    font-weight: bolder;
+/*    text-align: center;*/
+}
+
+
+/* class */
+
+.ws-container{
+/* Container for the weather summary information */
+    display: flex;
+    align-content: center;
+
+}
+
+.ws-container h3{
+    align-content: center;
+}
+
+/*
+.floatRight{
+    overflow: auto;
+    float: right;
+}
+
+.floatLeft{
+    overflow: auto;
+    float: left;
+}
+*/
+
+.forecast{
+    display: none;
+
+}
+
+.sunny{
+    background-image: url(../images/Sunny%20day-min.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* id */
+
