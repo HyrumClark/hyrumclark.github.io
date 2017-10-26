@@ -177,6 +177,22 @@ h4 {
 
 
 /* class */
+.current{
+    max-width: 350px;
+}
+
+.current > p {}
+
+.highlow{}
+
+.conditions{}
+
+.ws-box{
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
 .floatRight{
     overflow: auto;
     float: right;
@@ -185,6 +201,15 @@ h4 {
 .floatLeft{
     overflow: auto;
     float: left;
+}
+
+.floatAuto{
+    overflow: auto;
+    float: inherit;
+}
+
+.photo{
+    text-align: center;
 }
 
 .forecast{

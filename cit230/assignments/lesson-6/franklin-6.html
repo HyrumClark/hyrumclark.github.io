@@ -44,23 +44,37 @@
 
     <main>
         <h2>The City of Franklin</h2>
+
         <figure>
             <img src="images/o-sunnyday.jpeg" alt="Sunny Day">
         </figure>
-        <section>
+
+        <section class="ws-box">
             <h3>Weather Summary</h3>
-            <div class="highlow">
-                <p>High: 90&deg;F</p>
-                <p>Low: 66&deg;F</p>
-            </div>
-            <div class="current">
-                <p class="floatLeft">Sunny</p>
+
+            <div class="current, floatLeft">
+                <p>Sunny</p>
                 <img src="images/o-sun.jpg" alt="sun">
             </div>
-            <div class="conditions">
-                <p>Precipitation: 0%</p>
-                <p>Wind Speed: 5 mph SW</p>
+
+            <div class="floatAuto">
+                <div class="highlow">
+                    <p>High: 90&deg;F</p>
+                    <p>Low: 66&deg;F</p>
+                </div>
+
+                <div class="conditions">
+                    <p>Precipitation: 0%</p>
+                    <p>Wind Speed: 5 mph SW</p>
+                </div>
             </div>
+        </section>
+
+        <section class="photo">
+            <img src="images/o-franklin-sm200.jpeg" alt="Beautiful Franklin, Land I love!"
+                 srcset="images/o-franklin-sm200.jpeg 200w,
+                         images/o-franklin-med350.jpeg 350w,
+                         images/o-franklin-lg700.jpeg 700w" >
         </section>
 
         <section class="forecast">
