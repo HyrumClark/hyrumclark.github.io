@@ -44,27 +44,60 @@ header img {
 
 header .subheading {}
 
-nav {}
-
-nav button {}
-
-nav ul {
-    display: none;
-    text-align: center;
-    list-style-type: none;
-    margin: 0;
+/* -- NAVIGATION MENU -- */
+nav {
     padding: 0;
-
+    margin: 0 0 0 0;
+    background-color: #0088ff;
 }
 
+nav ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
-nav ul li {}
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 8.0rem;
+    right: 3.25rem;
+}
 
-nav ul li a {}
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
 
-nav ul li.active a {}
+.navigation li {
+    display: none;
+}
 
-nav ul li a:hover {}
+.navigation.responsive {
+    position: relative;
+}
+
+.navigation.responsive li {
+    background-color: #0088ff;
+    display: block;
+    width: 100%;
+    margin: 0 0;
+    border: 1px solid #000;
+}
+
+.navigation.responsive li a {
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #fff22a;
+    font-weight: bold;
+}
+
+.navigation.responsive li a:hover {
+    background-color: lightgray;
+}
+/* --End navigation Menu-- */
 
 main {}
 
