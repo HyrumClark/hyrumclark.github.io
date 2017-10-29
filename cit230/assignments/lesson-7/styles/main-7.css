@@ -1,6 +1,6 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box; margin: 0 8px; }
+* { box-sizing: border-box; margin: 0 auto;}
 /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
@@ -12,17 +12,14 @@ body {
 }
 
 header, nav, main, footer {
-/*
-    margin: .25rem auto;
+    margin: .15rem auto;
     padding: 1%;
-*/
-    /*max-width: 1000px;*/
 }
 
 header, footer, footer a {
     font-family: Papyrus;
     font-weight: bolder;
-/*    text-align: center;*/
+    text-align: center;
     background-color: #0088ff;
     color: #FFF;
 }
@@ -40,46 +37,75 @@ header {
 header h1 { font-weight: bold; }
 
 header img {
-
     width: 92%;
 }
 
 header .subheading {}
 
-nav {}
-
-nav button {}
-
-nav ul {
-    display: none;
-/*    text-align: center;*/
-    list-style-type: none;
-/*
-    margin: 0;
-    padding: 0;
-*/
-
+/* -- NAVIGATION MENU -- */
+nav {
+    background-color: #0088ff;
 }
 
+nav ul {
+}
 
-nav ul li {}
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 8.0rem;
+    right: 3.25rem;
+}
 
-nav ul li a {}
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
 
-nav ul li.active a {}
+.navigation li {
+    display: none;
+}
 
-nav ul li a:hover {}
+.navigation.responsive {
+    position: relative;
+}
 
-main {}
+.navigation.responsive li {
+    background-color: #0088ff;
+    display: block;
+    width: 100%;
+    margin: 0 0;
+    border: 1px solid #000;
+}
+
+.navigation.responsive li a {
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #fff22a;
+    font-weight: bold;
+}
+
+.navigation.responsive li a:hover {
+    background-color: lightgray;
+}
+/* --End navigation Menu-- */
+
+main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 700px;
+
+}
 
 main h2 {}
 
 main figure {
-/*
     margin: 0 auto;
-    text-align: center;
-*/
-    width: 96%;
+    width: 100%;
 }
 
 main figure img {
@@ -90,7 +116,7 @@ section {}
 
 section div {
     overflow: auto;
-/*    margin: 0 auto;*/
+    margin: 0 auto;
     max-width: 700px
 }
 
@@ -99,22 +125,20 @@ section div img {}
 article p {
     max-width: 1000px;
     overflow: auto;
-/*
     text-align: center;
     margin: 0 auto;
-*/
 }
 
 article img {
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     width: 100%;
-    max-width: 700px;
+/*    max-width: 700px;*/
     /* fill the page in the small/phone view */
-/*    margin: 5px auto 0 auto;*/
+    margin: 5px auto 0 auto;
 }
 
 table{
-/*    margin: 0 auto;*/
+    margin: 0 auto;
 }
 
 footer { font-size: smaller; }
@@ -122,9 +146,7 @@ footer { font-size: smaller; }
 
 footer aside {}
 
-footer aside p {
-/*    margin: -7px auto;*/
-}
+footer aside p {margin: -7px auto;}
 
 h1 {
     font-size:  2.25rem;
@@ -134,14 +156,14 @@ h1 {
 
 h2 {
     font-size: 1.75rem ;
-/*    text-align: center;*/
+    text-align: center;
     border-bottom: 1px solid #bbb;
     color: #fff22a;
 }
 
 h3 {
     font-size: 1.25rem ;
-/*    text-align: center;*/
+    text-align: center;
     border-bottom: 1px solid #bbb;
     color: #fff22a;
 }
@@ -149,34 +171,31 @@ h3 {
 h4 {
     font-size: 1.15rem ;
     font-weight: bolder;
-/*    text-align: center;*/
+    text-align: center;
 }
 
 
 /* class */
-
-.ws-container{
-/* Container for the weather summary information */
-    display: flex;
-    align-content: center;
-
+.current{
+    max-width: 350px;
 }
 
-.ws-container h3{
-    align-content: center;
-}
+.current > p {}
 
-/*
-.floatRight{
+.highlow{}
+
+.conditions{}
+
+.ws-box{
+    max-width: 700px;
+    margin: 0 auto;
     overflow: auto;
-    float: right;
 }
 
-.floatLeft{
-    overflow: auto;
-    float: left;
+
+.photo{
+    text-align: center;
 }
-*/
 
 .forecast{
     display: none;
@@ -188,6 +207,27 @@ h4 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.galleryGrid{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.galleryBox{
+    max-width: 500px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.galleryBox > img{
+    max-width: 90%;
+}
+
+.galleryBox > img:hover{
+    box-shadow: 5px 5px 30px grey;
 }
 
 /* id */
