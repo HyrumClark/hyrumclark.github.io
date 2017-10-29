@@ -6,20 +6,7 @@
     }
 
     .galleryGrid{
-        display: grid;
-        grid-auto-columns: 1fr, 1fr, 1fr;
-        grid-gap: 10px;
-    }
-
-    .galleryBox{
-        max-width: 500px;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-    }
-
-    .galleryBox > img{
-        max-width: 90%;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 

@@ -92,60 +92,14 @@ nav ul {
 }
 /* --End navigation Menu-- */
 
-main {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-content: center;
-    max-width: 700px;
-}
-
-main h2 {}
-
-main figure {
-    margin: 0 auto;
-    width: 100%;
-}
-
-main figure img {
-    width: 100%
-}
-
-section {}
-
-section div {
-    overflow: auto;
-    margin: 0 auto;
-    max-width: 700px
-}
-
-section div img {}
-
-article p {
-    max-width: 1000px;
-    overflow: auto;
-    text-align: center;
-    margin: 0 auto;
-}
-
-article img {
-    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 100%;
-/*    max-width: 700px;*/
-    /* fill the page in the small/phone view */
-    margin: 5px auto 0 auto;
-}
-
-table{
-    margin: 0 auto;
-}
-
 footer { font-size: smaller; }
 
 
 footer aside {}
 
 footer aside p {margin: -7px auto;}
+
+main{max-width: 1500px;}
 
 h1 {
     font-size:  2.25rem;
@@ -181,38 +135,14 @@ h4 {
 
 .current > p {}
 
-.highlow{}
-
-.conditions{}
-
-.ws-box{
-    max-width: 700px;
-    margin: 0 auto;
-    overflow: auto;
-}
-
-
 .photo{
     text-align: center;
-}
-
-.forecast{
-    display: none;
-
-}
-
-.sunny{
-    background-image: url(../images/Sunny%20day-min.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .galleryGrid{
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
-    max-width: 1500px;
 }
 
 .galleryBox{
