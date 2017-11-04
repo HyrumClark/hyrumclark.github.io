@@ -1,0 +1,164 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box; margin: 0 auto;}
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: Comic sans ms, 'Architects Daughter', cursive, Ubuntu, sans-serif;
+    color: #000;
+    background-color: lightgrey;
+}
+
+header, nav, main, footer {
+    margin: .15rem auto;
+    padding: 1%;
+}
+
+header, footer, footer a {
+    font-family: Papyrus;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #0088ff;
+    color: #FFF;
+}
+
+
+header {
+    overflow: auto;
+    background-image: url(../images/o-skyline.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header h1 { font-weight: bold; }
+
+header img {
+    width: 92%;
+}
+
+header .subheading {}
+
+/* -- NAVIGATION MENU -- */
+nav {
+    background-color: #0088ff;
+}
+
+nav ul {
+}
+
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 8.0rem;
+    right: 3.25rem;
+}
+
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation.responsive {
+    position: relative;
+}
+
+.navigation.responsive li {
+    background-color: #0088ff;
+    display: block;
+    width: 100%;
+    margin: 0 0;
+    border: 1px solid #000;
+}
+
+.navigation.responsive li a {
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #fff22a;
+    font-weight: bold;
+}
+
+.navigation.responsive li a:hover {
+    background-color: lightgray;
+}
+/* --End navigation Menu-- */
+
+footer { font-size: smaller; }
+
+
+footer aside {}
+
+footer aside p {margin: -7px auto;}
+
+main{max-width: 1500px;}
+
+h1 {
+    font-size:  2.25rem;
+    text-align: center;
+    color: #fff22a;
+}
+
+h2 {
+    font-size: 1.75rem ;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+    color: #fff22a;
+}
+
+h3 {
+    font-size: 1.25rem ;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+    color: #fff22a;
+}
+
+h4 {
+    font-size: 1.15rem ;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+/* class */
+.current{
+    max-width: 350px;
+}
+
+.current > p {}
+
+.photo{
+    text-align: center;
+}
+
+.galleryGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.galleryBox{
+    max-width: 500px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.galleryBox > img{
+    max-width: 90%;
+}
+
+.galleryBox > img:hover{
+    box-shadow: 5px 5px 30px grey;
+}
+
+/* id */
+

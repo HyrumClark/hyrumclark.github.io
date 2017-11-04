@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 <head w3-include-html="../../modules/head.html">
-    <title>What's My Weather?</title>
+    <title>Franklin, MU</title>
     <meta name="Franklin Weather Site" content="Weather forecast for Franklin, MU">
 </head>
 
@@ -14,44 +14,40 @@
     <nav w3-include-html="../../modules/nav.html"></nav>
 
 
-    <main id="gallerymain">
+    <main>
         <h2>The City of Franklin</h2>
 
         <figure>
-            <img src="images/o-sunnyday.jpeg" alt="Sunny Day">
+            <img src="../../images/franklin/o-sunnyday.jpeg" alt="Sunny Day">
         </figure>
 
-        <section class="ws-box">
-            <h3>Weather Summary</h3>
-
-            <div class="current, floatLeft">
-                <p>Sunny</p>
-                <img src="../../images/franklin/o-sun.jpg" alt="sun">
-            </div>
-
-            <div class="floatAuto">
-                <div class="highlow">
-                    <p>High: 90&deg;F</p>
-                    <p>Low: 66&deg;F</p>
+        <h3>Weather Summary</h3>
+        <div>
+            <section class="sunny">
+                <div class="current">
+                    <p>Thunderstorms</p>
+    <!--            <img src="../../images/franklin/o-sun.jpg" alt="sun">-->
                 </div>
 
-                <div class="conditions">
-                    <p>Precipitation: 0%</p>
-                    <p>Wind Speed: 5 mph SW</p>
+                <div>
+                    <p>High: 58&deg;F</p>
+                    <p>Low: 37&deg;F</p>
+                    <p>Precipitation: 80%</p>
+                    <p>Wind Speed: 15 mph NSE</p>
                     <p>Current Windchill: <span id="windchill">Windchill goes here</span>&deg;F</p>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <figure class="photo">
-            <img src="images/o-franklin-original.jpeg"
-                 alt="Beautiful Franklin, Land I love!"
-                 srcset="images/o-franklin-sm200.jpeg 400w,
-                         images/o-franklin-med350.jpeg 800w,
-                         images/o-franklin-lg700.jpeg 1200w"
-                 sizes="85vw"
-            >
-        </figure>
+            <figure class="photo">
+                <img src="../../images/franklin/o-franklin-original.jpeg"
+                     alt="Beautiful Franklin, Land I love!"
+                     srcset="../../images/franklin/o-franklin-sm200.jpeg 400w,
+                             ../../images/franklin/o-franklin-med350.jpeg 800w,
+                             ../../images/franklin/o-franklin-lg700.jpeg 1200w"
+                     sizes="85vw"
+                >
+            </figure>
+        </div>
 
         <section class="forecast">
             <h3>10 Day Forecast</h3>
@@ -72,16 +68,16 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>89&deg;F</td>
-                        <td>87&deg;F</td>
-                        <td>78&deg;F</td>
-                        <td>75&deg;F</td>
+                        <td>58&deg;F</td>
+                        <td>52&deg;F</td>
+                        <td>56&deg;F</td>
+                        <td>62&deg;F</td>
+                        <td>63&deg;F</td>
+                        <td>68&deg;F</td>
                         <td>72&deg;F</td>
-                        <td>72&deg;F</td>
-                        <td>79&deg;F</td>
-                        <td>83&deg;F</td>
-                        <td>85&deg;F</td>
-                        <td>89&deg;F</td>
+                        <td>70&deg;F</td>
+                        <td>69&deg;F</td>
+                        <td>65&deg;F</td>
                     </tr>
                 </tbody>
             </table>
@@ -89,7 +85,7 @@
 
         <article>
             <h3>Franklin Breaks Record</h3>
-            <p><img src="images/o-cityscape.jpeg" alt="Franklin Cityscape"></p>
+            <p><img src="../../images/franklin/o-cityscape.jpeg" alt="Franklin Cityscape"></p>
             <p class="town-article">lorem ipsum dolor sit amet, consectetur adipiscing elit. phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. maecenas nisl est, ultrices nec congue eget, auctor vitae massa. fusce luctus vestibulum augue ut aliquet. mauris ante ligula, facilisis sed ornare eu, lobortis in odio. praesent convallis urna a lacus interdum ut hendrerit risus congue. nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. in at libero sed nunc venenatis imperdiet sed ornare turpis. donec vitae dui eget tellus gravida venenatis. integer fringilla congue eros non fermentum. sed dapibus pulvinar nibh tempor porta. cras ac leo purus. mauris quis diam velit.</p>
         </article>
 
