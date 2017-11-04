@@ -62,6 +62,11 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .galleryBox{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
     .sunny{
         min-width: 225px;
     }
