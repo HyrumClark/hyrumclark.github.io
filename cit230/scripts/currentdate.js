@@ -1,3 +1,4 @@
+function getDateFunc(){
     var now = new Date();
     var options = {
         weekday: 'long',
@@ -7,3 +8,4 @@
     }
     var d = now.toLocaleString('en-us', options);
     document.getElementById("getDate").innerHTML = d;
+}
