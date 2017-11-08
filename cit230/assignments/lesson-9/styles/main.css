@@ -7,21 +7,28 @@ body {
     font-family:  Ubuntu, sans-serif;
     color: #000;
     background-color: ghostwhite;
+    margin: 5px 5px;
 }
 
 table{
     text-align: center;
     border-collapse: collapse;
+    box-shadow: 5px 5px 30px grey;
+}
+
+thead td{
+    padding: 5px 10px;
+    border: 1px solid lightgrey;
 }
 
 td{
-    padding: 0 10px;
-    border: 1px solid grey;
+    padding: 2.5px 10px;
+    border: 1px solid lightgrey;
 }
 
 th{
-    padding: 0 10px;
-    border: 1px solid grey;
+    padding: 2.5px 10px;
+    border: 1px solid lightgrey;
 }
 
 table thead tr td{
