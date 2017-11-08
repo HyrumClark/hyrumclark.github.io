@@ -1,0 +1,97 @@
+/* html */
+* { margin: 0; box-sizing: border-box; }
+
+body {
+    font-size: 16px;
+    line-height: 32px;
+    font-family:  Ubuntu, sans-serif;
+    color: #000;
+    background-color: ghostwhite;
+}
+
+table{
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 0 10px;
+    border: 1px solid grey;
+}
+
+th{
+    padding: 0 10px;
+    border: 1px solid grey;
+}
+
+table thead tr td{
+    background-color: #7fb9c2;
+    font-weight: bold;
+    font-size: 2em;
+
+}
+
+table thead tr th{
+    background-color: #628ca6;
+    color: white;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(even){
+    background-color: #e7ffed;
+}
+
+tbody tr:nth-child(5) td:nth-child(1){
+    font-style: italic;
+}
+
+tbody tr:nth-child(4) td:nth-child(3){
+
+    background-color: #628ca6;
+    color: white;
+}
+
+tfoot{
+   font-size: smaller;
+    background-color: #7fb9c2;
+}
+
+/*
+h1 {
+    font-size:  2.25rem;
+    text-align: center;
+    color: #FFF;
+}
+
+h2 {
+    font-size: 1.5rem ;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+header, main, footer {
+    margin: .25rem auto;
+    padding: .5rem;
+    max-width: 1000px;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: #2659BF;
+    color: whitesmoke;
+}
+
+footer {
+    font-size: smaller;
+}
+*/
+
+
+/* class */
+
+
+/* id */
+
