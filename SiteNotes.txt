@@ -1,0 +1,7 @@
+Pictures match the weather
+Make nave stand out
+
+gallery:
+limit to 2 lines and have a rollover feature to pop the rest out
+image sizes the same
+gallery view change
