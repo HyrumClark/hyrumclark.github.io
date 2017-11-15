@@ -212,6 +212,7 @@ h4 {
     background-position: center;
     background-repeat: no-repeat;
     background-size:contain;
+    opacity: 50;
 }
 
 .galleryGrid{
