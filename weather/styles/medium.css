@@ -1,0 +1,76 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    header img { max-width: 700px; }
+
+    main figure img { max-width: 700px; }
+
+    main div{
+        display: flex;
+
+    }
+
+    main div section div{
+        display: block;
+        width 2000px;
+    }
+
+    nav button { display: none; }
+    /* hamburger button does not need to be shown */
+
+    nav{
+        background-color: #0088ff;
+    }
+
+    nav ul {
+        display: inline;
+        list-style-type: none;
+    }
+
+    nav ul li{}
+
+    section.forecast { display: block; }
+
+    /* show the 10-day forecast with the medium view and up */
+
+    /* responsive images */
+
+
+    .forecast{
+        display: none;
+        text-align: center;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .navigation li {
+    display: inline;
+    }
+
+    .nav-container{
+        display: flex;
+        max-width: 700px;
+    }
+
+    .nav-item{
+        width: 100px;
+        flex: 1 1 auto;
+    }
+
+    .galleryGrid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .galleryBox{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .sunny{
+        min-width: 225px;
+    }
+
+
+}
+
