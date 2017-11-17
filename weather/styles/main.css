@@ -47,6 +47,14 @@ nav {
     background-color: #0088ff;
 }
 
+nav ul li.active a {
+    color: chartreuse;
+}
+
+nav ul li a:hover{
+    background-color: blueviolet;
+}
+
 nav ul {
 }
 
