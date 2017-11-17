@@ -8,4 +8,5 @@ function getDateFunc(){
     }
     var d = now.toLocaleString('en-us', options);
     document.getElementById("getDate").innerHTML = d;
+    document.getElementById("getYear").innerHTML = now.getFullYear();
 }
