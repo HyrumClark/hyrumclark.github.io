@@ -1,8 +1,10 @@
 @media only screen and (min-width: 37.5em) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
-    header img { max-width: 700px; }
+    header img { max-width: 900px; }
 
-    main figure img { max-width: 700px; }
+    main{ padding: 0 20px; }
+
+    main figure img { max-width: 1200px; }
 
     main div{
         display: flex;
@@ -11,13 +13,14 @@
 
     main div section div{
         display: block;
-        width 2000px;
+        max-width 2000px;
     }
 
     nav button { display: none; }
     /* hamburger button does not need to be shown */
 
     nav{
+        padding: 6px 0;
         background-color: #0088ff;
     }
 
@@ -26,7 +29,11 @@
         list-style-type: none;
     }
 
-    nav ul li{}
+    nav ul li a{
+        padding: 8px 10px;
+        margin: 0px -1.5px;
+        border-radius: 5%;
+    }
 
     section.forecast { display: block; }
 
@@ -50,7 +57,7 @@
 
     .nav-container{
         display: flex;
-        max-width: 700px;
+        max-width: 1200px;
     }
 
 /*
@@ -69,9 +76,19 @@
         justify-content: flex-start;
     }
 
-    .sunny{
+    .condition{
         min-width: 225px;
     }
+
+    .ws-box{
+        display: flex;
+    }
+
+    .ws-item{
+
+    }
+
+
 
 
 }

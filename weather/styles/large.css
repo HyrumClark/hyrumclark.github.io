@@ -1,12 +1,32 @@
 @media only screen and (min-width: 64em) {
     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 
+    main{ padding: 0 5%; }
+
     article p.town-article img {
         width: 29.333%;
     }
 
+    nav{
+        padding: 14px 0;
+    }
+
+    nav ul li a{
+        padding: 16px 20px;
+        margin: 0px -2px;
+    }
+
     .galleryGrid{
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+     .ws-box{
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    .ws-item{
+
     }
 }
 
