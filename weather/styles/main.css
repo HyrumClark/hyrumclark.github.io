@@ -218,11 +218,15 @@ h4 {
 
 /* class */
 .smaller{
-    font-size: .75em;
+    font-size: 1em;
 }
 
 .larger{
     font-size: 1.25em;
+}
+
+.noborder{
+    border-bottom: 0;
 }
 
 .current{}
