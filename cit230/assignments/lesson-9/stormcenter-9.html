@@ -15,7 +15,7 @@
 
     <main>
         <h2>
-            <p>Storm Center</p>
+            Storm Center
             <p class="smaller">Where you become the reporter</p>
         </h2>
 
@@ -72,14 +72,14 @@
 
             <p>
                 <label>
-                <span>Rate below, on a scale of 1-10, how bad is it (10 being the worst):
-                    <span id="ratingvalue">6</span><br>
-                </span>
+                    <span>Rate below, on a scale of 1-10, how bad is it (10 being the worst):
+                        <span id="ratingvalue">6</span><br>
+                    </span>
 
-                <p>
-                    1 <input name="severity" type="range" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> 10
-                </p>
-            </label>
+                    <p>
+                        1 <input name="severity" type="range" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> 10
+                    </p>
+                </label>
 
                 <script type="application/javascript">
                     function adjustRating(rating) {
