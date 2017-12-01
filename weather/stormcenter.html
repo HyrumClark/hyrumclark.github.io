@@ -17,26 +17,26 @@
         <h2 class="noborder">Storm Center</h2>
         <h2 class="smaller">Where you become the reporter</h2>
         
-        <form>
+                <form>
             <p class="larger">Please fill out the form below to report a storm</p>
 
             <br>
 
-            <p>First Name: <input type="text" name="firstname" pattern="[A-Za-z ]{5}" required></p>
+            <lable>First Name: </lable> <input type="text" name="firstname" pattern="[A-Za-z ]{5}" required><br>
 
-            <p>Last Name: <input type="text" name="lastname" pattern="[A-Za-z ]{5}" required></p>
+            <lable>Last Name: </lable> <input type="text" name="lastname" pattern="[A-Za-z ]{5}" required><br>
 
-            <p>Email: <input type="email" name="email" placeholder="example@email.com"></p>
+            <lable>Email: </lable> <input type="email" name="email" placeholder="example@email.com"><br>
 
-            <p>Phone Number: <input type="tel" name="phone" required></p>
-            
-            <p>Zip Code: <input type="number" name="zip" required></p>
+            <lable>Phone Number: </lable> <input type="tel" name="phone" required><br>
 
-            <p>Storm Date: <input type="date" name="date"></p>
+            <lable>Zip Code: </lable> <input type="number" name="zip" required><br>
 
-            <p>Storm Type:
-                <input list="storms" name="storms">
-                <datalist id="storms">
+            <lable>Storm Date: </lable> <input type="date" name="date"><br>
+
+            <lable>Storm Type: </lable>
+            <input list="storms" name="storms">
+            <datalist id="storms">
                     <option value="Thunderstorm">
                     <option value="Monsoon">
                     <option value="Flash flood">
@@ -44,51 +44,40 @@
                     <option value="Tornado">
                     <option value="Hail">
                     <option value="Blizzard">
-                </datalist>
-            </p>
+                </datalist><br>
 
-            <section>
-                <label>
-                    <p>
-                        <span>Rate below, on a scale of 1-10, how bad is it (10 being the worst):
-                            <span id="ratingvalue">6</span>
-                        </span>
-                    </p>
-                    
-                    <p>1 <input name="severity" type="range" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> 10</p>
-                </label>
+            <lable>Rate below, on a scale of 1-10, how bad is it (10 being the worst):
+                <span id="ratingvalue">6</span> </lable>
+                <br>
+                <p>1 <input name="severity" type="range" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> 10</p>
 
-                <script type="application/javascript">
-                    function adjustRating(rating) {
-                        document.getElementById("ratingvalue").innerHTML = rating;
-                    }
-                </script>
-            </section>
+            <script type="application/javascript">
+                function adjustRating(rating) {
+                    document.getElementById("ratingvalue").innerHTML = rating;
+                }
+            </script>
 
-            <p> Storm Region:
+            <lable> Storm Region: </lable>
                 <select name="region">
                     <option value="selectRegion" disabled>Select Region...</option>
                     <option value="franklin">Franklin</option>
                     <option value="greenville">Greenville</option>
                     <option value="springfield">Springfield</option>
                     <option value="springfield">Other</option>
-                </select>
-            </p>
-
-            <p> Are you in danger?
+                </select><br>
+            
+            <lable> Are you in danger? </lable>
                 <input type="radio" name="danger" value="yes"> Yes
                 <input type="radio" name="danger" value="maybe"> Maybe
-                <input type="radio" name="danger" value="no"> No
-            </p>
+                <input type="radio" name="danger" value="no"> No<br>
+            
 
-            <p> Additional information or comments: <br>
-                <textarea name="comments" rows="7" cols="40"> </textarea>
-            </p>
+            <lable> Additional information or comments: </lable>
+                <br>
+                <textarea name="comments" rows="7" cols="40"> </textarea><br>
 
-            <p>
                 <input type="submit" name="submit">
-                <input name="redirect" type="hidden" value="thanks.html">
-            </p>
+                <input name="redirect" type="hidden" value="thanks.html"><br>
         </form>
 
     </main>
