@@ -20,13 +20,6 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 10px;
-        max-width: 1500px;
-    }
-
      .ws-box{
         display: flex;
         flex-flow: column-reverse;

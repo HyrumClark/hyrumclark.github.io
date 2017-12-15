@@ -124,7 +124,7 @@ nav ul {
 /* --End navigation Menu-- */
 
 main {
-    display: flex;
+/*    display: flex;*/
     flex-flow: column;
     justify-content: center;
     align-content: center;
@@ -278,27 +278,6 @@ h4 {
     background-image: url(../images/conditions/o-cloudy.png);
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    max-width: 1500px;
-}
-
-.gridBox{
-    max-width: 500px;
-    justify-content: center;
-    align-content: center;
-/*    text-align: center;*/
-}
-
-.gridBox figure img{
-    max-width: 400px;
-}
-.gridBox figure img:hover{
-    box-shadow: 5px 5px 30px grey;
-}
-
 .galleryGrid{
     display: grid;
     grid-template-columns: 1fr;
@@ -319,18 +298,6 @@ h4 {
 
 .galleryBox > img:hover{
     box-shadow: 5px 5px 30px grey;
-}
-
-.left{
-    text-align: left;
-}
-
-.center{
-    text-align: center;
-}
-
-.pictureSmall{
-    max-width: 70%
 }
 
 /* id */

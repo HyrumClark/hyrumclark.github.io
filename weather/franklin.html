@@ -16,9 +16,17 @@
 
     <main>
         <h2>The City of Franklin</h2>
+        <article class="left">
+            <h3 class="center">"<span id="motto"></span>"</h3>
+            <p>Year Founded: <span id="yearFounded"></span></p>
+            <p>Current Population: <span id="currentPopulation"></span></p>
+            <p>Average Rainfall: <span id="averageRainfall"></span> inches/yr</p>
+            <p>Events: </p>
+            <ul id="events"></ul>
+        </article>
 
         <figure>
-            <img src="images/franklin/o-sunnyday.jpeg" alt="Sunny Day">
+            <img class="pictureSmall" src="images/franklin/o-sunnyday.jpeg" alt="Sunny Day">
         </figure>
 
         <h3>Weather Summary</h3>
@@ -26,7 +34,7 @@
             <section class="item condition sunny">
                 <div class="current">
                     <p>Thunderstorms</p>
-    <!--            <img src="images/franklin/o-sun.jpg" alt="sun">-->
+                    <!--            <img src="images/franklin/o-sun.jpg" alt="sun">-->
                 </div>
 
                 <div>
@@ -39,13 +47,9 @@
             </section>
 
             <figure class="item photo">
-                <img src="images/franklin/o-franklin-original.jpeg"
-                     alt="Beautiful Franklin, Land I love!"
-                     srcset="images/franklin/o-franklin-sm200.jpeg 400w,
+                <img class="pictureSmall" src="images/franklin/o-franklin-original.jpeg" alt="Beautiful Franklin, Land I love!" srcset="images/franklin/o-franklin-sm200.jpeg 400w,
                              images/franklin/o-franklin-med350.jpeg 800w,
-                             images/franklin/o-franklin-lg700.jpeg 1200w"
-                     sizes="85vw"
-                >
+                             images/franklin/o-franklin-lg700.jpeg 1200w" sizes="85vw">
             </figure>
         </div>
 
@@ -68,16 +72,16 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>58&deg;F</td>
-                        <td>52&deg;F</td>
-                        <td>56&deg;F</td>
-                        <td>62&deg;F</td>
-                        <td>63&deg;F</td>
-                        <td>68&deg;F</td>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
                         <td>72&deg;F</td>
-                        <td>70&deg;F</td>
-                        <td>69&deg;F</td>
-                        <td>65&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
                     </tr>
                 </tbody>
             </table>
@@ -85,7 +89,7 @@
 
         <article>
             <h3>Franklin Breaks Record</h3>
-            <p><img src="images/franklin/o-cityscape.jpeg" alt="Franklin Cityscape"></p>
+            <p><img class="pictureSmall" src="images/franklin/o-cityscape.jpeg" alt="Franklin Cityscape"></p>
             <p class="town-article">lorem ipsum dolor sit amet, consectetur adipiscing elit. phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. maecenas nisl est, ultrices nec congue eget, auctor vitae massa. fusce luctus vestibulum augue ut aliquet. mauris ante ligula, facilisis sed ornare eu, lobortis in odio. praesent convallis urna a lacus interdum ut hendrerit risus congue. nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. in at libero sed nunc venenatis imperdiet sed ornare turpis. donec vitae dui eget tellus gravida venenatis. integer fringilla congue eros non fermentum. sed dapibus pulvinar nibh tempor porta. cras ac leo purus. mauris quis diam velit.</p>
         </article>
 
@@ -99,6 +103,7 @@
     <script src="scripts/modularize.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/cityinfo.js"></script>
 </body>
 
 </html>
