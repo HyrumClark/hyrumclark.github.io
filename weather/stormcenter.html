@@ -16,25 +16,25 @@
     <main>
         <h2 class="noborder">Storm Center</h2>
         <h2 class="smaller">Where you become the reporter</h2>
-        
+
         <form>
             <p class="larger">Please fill out the form below to report a storm</p>
 
             <br>
 
-            <lable>First Name: </lable> <input type="text" name="firstname" pattern="[A-Za-z ]{5}" required><br>
+            <label>First Name: </label> <input type="text" name="firstname" pattern="[A-Za-z ]{5}" required><br>
 
-            <lable>Last Name: </lable> <input type="text" name="lastname" pattern="[A-Za-z ]{5}" required><br>
+            <label>Last Name: </label> <input type="text" name="lastname" pattern="[A-Za-z ]{5}" required><br>
 
-            <lable>Email: </lable> <input type="email" name="email" placeholder="example@email.com"><br>
+            <label>Email: </label> <input type="email" name="email" placeholder="example@email.com"><br>
 
-            <lable>Phone Number: </lable> <input type="tel" name="phone" required><br>
+            <label>Phone Number: </label> <input type="tel" name="phone" required><br>
 
-            <lable>Zip Code: </lable> <input type="number" name="zip" required><br>
+            <label>Zip Code: </label> <input type="number" name="zip" required><br>
 
-            <lable>Storm Date: </lable> <input type="date" name="date"><br>
+            <label>Storm Date: </label> <input type="date" name="date"><br>
 
-            <lable>Storm Type: </lable>
+            <label>Storm Type: </label>
             <input list="storms" name="storms">
             <datalist id="storms">
                     <option value="Thunderstorm">
@@ -46,8 +46,8 @@
                     <option value="Blizzard">
                 </datalist><br>
 
-            <lable>Rate below, on a scale of 1-10, how bad is it (10 being the worst):
-                <span id="ratingvalue">6</span> </lable>
+            <label>Rate below, on a scale of 1-10, how bad is it (10 being the worst):
+                <span id="ratingvalue">6</span> </label>
                 <br>
                 <p>1 <input name="severity" type="range" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> 10</p>
 
@@ -57,7 +57,7 @@
                 }
             </script>
 
-            <lable> Storm Region: </lable>
+            <label> Storm Region: </label>
                 <select name="region">
                     <option value="selectRegion" disabled>Select Region...</option>
                     <option value="franklin">Franklin</option>
@@ -65,14 +65,14 @@
                     <option value="springfield">Springfield</option>
                     <option value="springfield">Other</option>
                 </select><br>
-            
-            <lable> Are you in danger? </lable>
+
+            <label> Are you in danger? </label>
                 <input type="radio" name="danger" value="yes"> Yes
                 <input type="radio" name="danger" value="maybe"> Maybe
                 <input type="radio" name="danger" value="no"> No<br>
-            
 
-            <lable> Additional information or comments: </lable>
+
+            <label> Additional information or comments: </label>
                 <br>
                 <textarea name="comments" rows="7" cols="40"> </textarea><br>
 
