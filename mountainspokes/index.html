@@ -13,60 +13,41 @@
     <!-- site navigation use placeholder references -->
     <nav w3-include-html="modules/nav.html"></nav>
 
-
     <main>
-        <article>
-            <div>
-                <h3>Today's Weather Story</h3>
-                <p>Quisque maximus augue mauris, sit amet congue justo molestie vel. Ut feugiat sem eget turpis efficitur, nec hendrerit metus accumsan. Nullam commodo metus felis, eu viverra justo feugiat id. Ut in lorem laoreet, feugiat lacus at, volutpat ligula. Proin nisl nisl, efficitur id pellentesque et, tincidunt non sapien. Suspendisse at varius nulla. Ut sed euismod eros. Quisque sollicitudin mollis nisl, a consectetur libero auctor ut.</p>
-            </div>
-            <figure>
-                <img src="" alt="">
-            </figure>
-        </article>
+       <p id="register">Want to stay updated on upcoming events? <button class="larger button" onclick="location.href='register.html';"><h4 class="larger">Register Now</h4><p class="smaller">to recieve updates on our new events</p></button>
+       </p>
+       <figure>
+          <img src="images/mountainbiketour2.jpeg" alt="Mountain Biker">
+       </figure>
 
-        <section>
-            <article>
-                <div>
-                    <h3>Franklin</h3>
-                    <h4>Town Stats</h4>
-                    <p>Current Temperature: <span>95&deg;F</span></p>
-                    <a href="franklin.html">For more information visit city page here...</a>
-                </div>
-                <figure>
-                    <img src="" alt="The City of Franklin">
-                </figure>
-            </article>
-            <article>
-                <div>
-                    <h3>Greenville</h3>
-                    <h4>Town Stats</h4>
-                    <p>Current Temperature: <span>90&deg;F</span></p>
-                    <a href="greenville.html">For more information visit city page here...</a>
-                </div>
-                <figure>
-                    <img src="" alt="The City of Greenville">
-                </figure>
-            </article>
-            <article>
-                <div>
-                    <h3>Springfield</h3>
-                    <h4>Town Stats</h4>
-                    <p>Current Temperature: <span>85&deg;F</span></p>
-                    <a href="springfield.html">For more information visit city page here...</a>
-                </div>
-                <figure>
-                    <img src="" alt="The City of Springfield">
-                </figure>
-            </article>
-        </section>
-
-
+       <div class="galleryGrid">
+           <a href="tours.html">
+               <div class="galleryBox">
+                    <h2>Adventure Tours</h2>
+                    <img src="images/squarestreettour.jpg" alt="Tours">
+                    <p></p>
+               </div>
+            </a>
+            <a href="events.html">
+               <div class="galleryBox">
+                <h2>Upcoming Events</h2>
+                <img src="images/squaremountainbiketour.jpg" alt="Events">
+                <p></p>
+               </div>
+            </a>
+            <a href="sales.html">
+               <div class="galleryBox">
+                    <h2>Bicycle Sales</h2>
+                    <img src="images/squarebikeshop.jpg" alt="Bike Sales">
+                    <p></p>
+               </div>
+            </a>
+       </div>
     </main>
 
     <footer w3-include-html="modules/footer.html"></footer>
 
-    <script src="scripts/wayfnding.js"></script>
+    <script src="scripts/wayfinding.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/w3.js"></script>
     <script src="scripts/modularize.js"></script>

@@ -3,10 +3,6 @@
 
     main{ padding: 0 5%; }
 
-    article p.town-article img {
-        width: 29.333%;
-    }
-
     nav{
         padding: 14px 0;
     }
@@ -20,13 +16,24 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-     .ws-box{
-        display: flex;
-        flex-flow: column-reverse;
+    .tourGrid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .ws-item{
+    .tourBox1{
+        grid-column: 1;
+        grid-row: 1;
+    }
 
+    .tourBox2{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .tourBox3{
+        grid-column: 3;
+        grid-row: 1;
     }
 }
 

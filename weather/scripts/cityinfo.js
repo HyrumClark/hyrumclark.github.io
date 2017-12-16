@@ -1,20 +1,16 @@
-
 var url = document.location.href;
 var splitUrl = url.split('/');
 var pageName = splitUrl[splitUrl.length - 1];
 
-if (pageName === "franklin.html")
-    {
-        var page = "Franklin";
-    }
-if (pageName === "greenville.html")
-    {
-        var page = "Greenville";
-    }
-if (pageName === "springfield.html")
-    {
-        var page = "Springfield"
-    }
+if (pageName === "franklin.html") {
+    var page = "Franklin";
+}
+if (pageName === "greenville.html") {
+    var page = "Greenville";
+}
+if (pageName === "springfield.html") {
+    var page = "Springfield";
+}
 
 
 var requestURL = 'https://byui-cit230.github.io/towndata.json';

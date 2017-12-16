@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en-us">
+
+<head w3-include-html="modules/head.html">
+    <title>The Mountain Spokes</title>
+    <meta name="The Mountain Spokes" content="Home page forThe Mountain Spokes site">
+</head>
+
+<body>
+
+    <header w3-include-html="modules/header.html"></header>
+
+    <!-- site navigation use placeholder references -->
+    <nav w3-include-html="modules/nav.html"></nav>
+
+
+    <main>
+        <h1>Register</h1>
+        <p>
+            Register below for our next big event
+        </p>
+
+        <form id="register">
+            <lable for="fullname">Full Name: </lable> <input type="text" name="fullname" pattern="[A-Za-z ]{5,}" required><br>
+            <lable for="email">Email: </lable> <input type="email" name="email" placeholder="example@email.com"><br>
+            <lable for="phone">Phone Number: </lable> <input type="tel" name="phone" required><br>
+            <lable>Date of Birth: </lable> <input type="date" name="date" required><br>
+            <lable for="fullname">State or Country </lable> <input type="text" name="state" pattern="[A-Za-z ]{2,}" required><br>
+
+
+            <lable for="interest">Types of events you're interested in: </lable><br>
+            <input type="checkbox" name="interest" value="mountain biking"> Mountain Biking
+            <input type="checkbox" name="interest" value="races"> Races <br>
+            <input type="checkbox" name="interest" value="bicycle shows">Bicycle Shows
+            <input type="checkbox" name="interest" value="socials">Socials  <br>
+
+            <lable> Special Accommodations/Comments: </lable>
+            <br>
+            <textarea name="comments" rows="7" cols="40"> </textarea><br>
+
+            <input type="submit" name="submit">
+        </form>
+
+    </main>
+
+    <footer w3-include-html="modules/footer.html"></footer>
+
+    <script src="scripts/wayfinding.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/modularize.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/register.js"></script>
+</body>
+
+</html>
