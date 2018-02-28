@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head w3-include-html="modules/head.html">
+    <title>WireShark PCap Activity</title>
+    <meta name="description" content="Login page to BYU-I CSA's Top Secret Database">
+</head>
+
+<body>
+    <header w3-include-html="modules/header.html"></header>
+
+    <main>
+        <h2>
+            BYU-I CSA
+            <p>Top Secret Database</p>
+        </h2>
+        
+        <form>
+            <label>Username: </label> 
+            <input type="text" id="user" name="username" required><br>
+
+            <label>Password: </label> 
+            <input type="password" id=psw name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+
+            <input type="button" value="Login" id="submit" onclick="validate()"/>
+        </form>
+
+
+    </main>
+
+    <footer w3-include-html="modules/footer.html"></footer>
+    
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/modularize.js"></script>
+    <script src="scripts/login.js"></script>
+</body>
+
+</html>
